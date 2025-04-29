@@ -1,0 +1,50 @@
+# 📚 AI PDF Question-Answering System (FastAPI + Streamlit + Claude 3.5)
+
+This project is a full-stack RAG (Retrieval-Augmented Generation) pipeline where users can upload a PDF document, and then ask questions about it.  
+The system retrieves the most relevant sections of the document using semantic search and generates natural language answers using Claude 3.5 Haiku.
+
+✅ Built with **FastAPI** backend and **Streamlit** frontend.  
+✅ Uses **real embeddings** (MiniLM or BGE) and **FAISS** vector database.  
+✅ Answers generated with **Anthropic Claude 3.5** model.
+
+---
+
+## 🚀 Features
+
+- Upload any PDF (scanned or digital text)
+- Automatic text extraction and semantic chunking
+- Real semantic search (cosine similarity) over PDF content
+- Natural language question answering powered by Claude 3.5
+- Page numbers and file names tracked for better citation
+- Fully modular (easy to swap embedding models, vectorstores, LLMs)
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|------|------------|
+| Backend | FastAPI, LangChain, FAISS, HuggingFace Embeddings |
+| Frontend | Streamlit |
+| LLM | Anthropic Claude 3.5 Haiku |
+| PDF Parsing | PyMuPDF (fitz) |
+| Vector Storage | FAISS (in-memory or persistent) |
+
+---
+
+## 📦 Installation
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+pip install -r requirements.txt
+
+OPENAI_API_KEY=your-openai-key-if-needed
+ANTHROPIC_API_KEY=your-anthropic-key
+
+uvicorn app:app --reload
+
+streamlit run app_frontend.py
+

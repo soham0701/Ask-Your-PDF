@@ -1,0 +1,20 @@
+# Ignore environment config
+.env
+
+# Ignore Python virtual environments
+.venv/
+.ragvenv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore local storage folders (optional if you save faiss db)
+store/
+faiss_store/
+
+# Ignore Streamlit logs (optional)
+.streamlit/
+
+# Ignore VSCode settings (optional if you use VSCode)
+.vscode/

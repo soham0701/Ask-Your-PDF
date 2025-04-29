@@ -1,0 +1,22 @@
+# Core
+fastapi[standard]
+uvicorn
+streamlit
+requests
+
+# LangChain + Embeddings
+langchain
+langchain-community
+sentence-transformers
+
+# Vectorstore
+faiss-cpu
+
+# Claude LLM
+anthropic
+
+# PDF processing
+pymupdf
+
+# Environment Variables
+python-dotenv
